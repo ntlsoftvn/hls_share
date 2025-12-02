@@ -3,3 +3,5 @@ export type OrderStatusResult = {
     downloadLinkIds?: string[] | null;
     userId?: number | null;
 };
+
+export interface CreateOrderRequest {}
