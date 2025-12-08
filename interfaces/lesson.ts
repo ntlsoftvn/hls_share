@@ -1,3 +1,5 @@
+import { Category } from "./category";
+
 export interface LessonFormValues {
     title: string;
     description?: string;
@@ -30,7 +32,7 @@ export interface Lesson{
     fileId: number;
     price: number;
     rating: number;
-    categories:any[];
+    categories:Category[];
     thumbnailId?: number;
     zipFileId?: number;
     thumbnail?: { path: string };
