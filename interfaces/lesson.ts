@@ -25,6 +25,7 @@ export enum LessonTypeEnum {
 export interface Lesson{
     id: string;
     title: string;
+    topic: string;
     type: LessonType;
     description: string;
     classId: string;
@@ -32,7 +33,7 @@ export interface Lesson{
     fileId: number;
     price: number;
     rating: number;
-    categories:Category[];
+    categories:{category: Category}[];
     thumbnailId?: number;
     zipFileId?: number;
     thumbnail?: { path: string };
