@@ -18,10 +18,21 @@ export interface ProfileResponse {
     id: number;
     name?: string| null;
     email: string;
-    owned_resources_count: number;
+    owned_resources: number[];
 }
 
 export interface LoginRequest {
     email: string;
     password: string;
+}
+
+export interface Permission {
+    id: string
+    name: string;
+}
+
+export interface Role {
+    id: string;
+    name: string;
+    permissions: Permission[];
 }
