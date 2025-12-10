@@ -23,20 +23,22 @@ export enum LessonTypeEnum {
 }
 
 export interface Lesson{
-    id: string;
+    id: number;
     title: string;
-    topic: string;
-    type: LessonType;
-    description: string;
-    classId: string;
-    subjectId: string;
-    fileId: number;
+    topic: string|null;
+    type: string;
+    description: string|null;
+    classId: string| null;
+    subjectId: string| null;
+    fileId: number| null;
     price: number;
     rating: number;
     categories:{category: Category}[];
-    thumbnailId?: number;
-    zipFileId?: number;
-    thumbnail?: { path: string };
+    thumbnailId?: number| null;
+    zipFileId?: number| null;
+    thumbnail?: { path: string }| null;
+    file?: { id: number; key: string| null, size: number; }| null;
+    
 }
 
 export interface LessonResponse {
@@ -47,7 +49,7 @@ export interface LessonResponse {
 }
 
 export interface LessonContentResponse {
-    type: LessonType;
+    lesson:Lesson
     url: string;
 }
 
