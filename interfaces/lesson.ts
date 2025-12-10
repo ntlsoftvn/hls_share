@@ -46,6 +46,11 @@ export interface LessonResponse {
     limit: number;
 }
 
+export interface LessonContentResponse {
+    type: LessonType;
+    url: string;
+}
+
 export type PersonalLibResponse = {
     data: any[],
     totalCount: number,
