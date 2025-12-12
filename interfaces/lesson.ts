@@ -63,3 +63,13 @@ export interface CreateLessonReview{
     rating?: number;
     comment?: string;
 }
+
+export interface LessonReview{
+    id: number;
+    lessonId: number;
+    userId: number;
+    rating: number;
+    comment: string;
+    createdAt: string;
+    updatedAt: string;
+}
