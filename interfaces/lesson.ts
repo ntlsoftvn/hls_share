@@ -37,8 +37,7 @@ export interface Lesson{
     thumbnailId?: number| null;
     zipFileId?: number| null;
     thumbnail?: { path: string }| null;
-    file?: { id: number; key: string| null, size: number; }| null;
-    
+    file?: { id: number; key: string| null, size: number; mimeType: string }| null;
 }
 
 export interface LessonResponse {
