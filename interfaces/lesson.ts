@@ -59,3 +59,8 @@ export type PersonalLibResponse = {
     currentPage: number,
     limit: number
 }
+
+export interface CreateLessonReview{
+    rating?: number;
+    comment?: string;
+}
