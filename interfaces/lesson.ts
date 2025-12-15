@@ -73,3 +73,12 @@ export interface LessonReview{
     createdAt: string;
     updatedAt: string;
 }
+export interface SearchLessonParams {
+    keyword?: string;
+    categoryIds?: number[];
+    page?: number;
+    limit?: number;
+    subjectId?: string;
+    classId?: string;
+    type?: string;
+}
